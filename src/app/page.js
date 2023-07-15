@@ -1,30 +1,145 @@
 "use client";
-import Image from 'next/image'
-import Header from './components/Header'
-import ToggleSwitch from './components/ToggleSwitch'
-
-
+import Image from "next/image";
+import Header from "./components/Header";
+import ToggleSwitch from "./components/ToggleSwitch";
+import Plan from "./components/Plan";
+import Add from "./components/Add";
+import Faqs from "./components/Faqs";
+import Trust from "./components/Trust";
+import Quote from "./components/Quote";
+import Help from "./components/Help";
+import Free from "./components/Free";
+import Footer from "./components/Footer";
+import Social from "./components/Social";
 
 export default function Home() {
   return (
     <>
       <div>
         <Header />
-        <div className=' flex justify-center  '>
-          <p className=' text-green text-center pt-44 text-6xl font-bold'>Pick the best plan for<br /> your business</p>
+        <div className=" flex justify-center   ">
+          <p className=" text-green text-center pt-44 text-6xl font-bold">
+            Pick the best plan for
+            <br /> your business
+          </p>
         </div>
         <ToggleSwitch />
-        <div className='flex  justify-between'>
-          <div className='px-10 flex '>
-          <p className='text-green'>Starter</p>
-          <p>17</p>
-          <p className='px-2 text-sm font-light text-neutral-600'>/month</p>
-          <button className=' bg-lime-400 text-white rounded-full font-medium text-base px-2 py-2'>Start for free</button>
-          </div>
-          <div className='px-10'>Professional</div>
-          <div className='px-10'>Business</div>
+        <div className="flex flex-row gap-32 justify-center items-center">
+          <Plan
+            title="Kiri"
+            price="22"
+            caption="besiar kiri" />
+          <Plan title="Kiri" price="22" caption="besiar kiri" />
+          <Plan title="Kiri" price="22" caption="besiar kiri" />
         </div>
+        <div className=" flex text-center justify-center">
+          <p className=" mt-28 text-green font-bold text-3xl">Take it to the<br />
+            next level with<br /> add-ons</p>
+        </div>
+        <div className=" flex  gap-24  justify-center items-center py-9 px-6  ">
+        <div className="flex flex-row  justify-center items-center  ">
+          <Add
+            title="Collaborators"
+            caption="Invite other users to specific projects for limited access and functionality."
+            price="Free"
+          /></div>
+        <div className="flex justify-center items-center ">
+          <Add
+            title="Partners"
+            caption="Invite other users to specific projects for limited access and functionality."
+            price="9"
+          /></div>
+        <div className="flex justify-center items-center ">
+          <Add
+            title="Tax Assistant"
+            caption ="Invite other users to specific projects for limited access and functionality."
+            price="10"
+          /></div>
+          </div>
+          <Faqs/>
+          <Trust/>
+          <div className="flex flex-row gap-7 mt-9">
+          <Quote
+          w1="“My best friend"
+          w2='in scaling my business”'
+          /> 
+          <Quote
+          w1="“My best friend"
+          w2='in scaling my business”'
+          />  
+          <Quote
+          w1="“My best friend"
+          w2='in scaling my business”'
+          />
+          <Quote
+          w1="“My best friend"
+          w2='in scaling my business”'
+          />            
+          <Quote
+          w1="“My best friend"
+          w2='in scaling my business”'
+          />
+          <Quote
+          w1="“My best friend"
+          w2='in scaling my business”'
+          />           
+          
+          </div>
+
+          <div className="flex flex-row gap-7 px-6 py-6">
+          <Quote
+          w1="“My best friend"
+          w2='in scaling my business”'
+          />  
+          
+          <Quote
+          w1="“My best friend"
+          w2='in scaling my business”'
+          />      
+          <Quote
+          w1="“My best friend"
+          w2='in scaling my business”'
+          />            
+          <Quote
+          w1="“My best friend"
+          w2='in scaling my business”'
+          />
+          <Quote
+          w1="“My best friend"
+          w2='in scaling my business”'
+          />              
+          
+          </div>
+          
+          <div className="flex flex-row gap-4 px-6 py-2">
+          <Quote
+          w1="“My best friend"
+          w2='in scaling my business”'
+          />  
+          
+          <Quote
+          w1="“My best friend"
+          w2='in scaling my business”'
+          />      
+          <Quote
+          w1="“My best friend"
+          w2='in scaling my business”'
+          />            
+          <Quote
+          w1="“My best friend"
+          w2='in scaling my business”'
+          />
+          <Quote
+          w1="“My best friend"
+          w2='in scaling my business”'
+          />              
+          
+          </div>
+          <Help/>
+          <Free/>
+          <Footer/>
+          <Social/>
       </div>
     </>
-  )
+  );
 }

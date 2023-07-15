@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@coreui/react": "^5.0.0-alpha.0",
     "autoprefixer": "10.4.14",
+    "flowbite": "^1.7.0",
+    "flowbite-react": "^0.4.11",
     "framer-motion": "^10.12.18",
     "next": "13.4.9",
     "postcss": "8.4.25",
