@@ -26,11 +26,11 @@ export default function Home() {
         <ToggleSwitch />
         <div className="flex flex-row gap-32 justify-center items-center">
           <Plan
-            title="Kiri"
+            title="plan1"
             price="22"
-            caption="besiar kiri" />
-          <Plan title="Kiri" price="22" caption="besiar kiri" />
-          <Plan title="Kiri" price="22" caption="besiar kiri" />
+            caption="plan1 des" />
+          <Plan title="plan2" price="22" caption="plan2 des" />
+          <Plan title="plan3" price="22" caption="plan3 des" />
         </div>
         <div className=" flex text-center justify-center">
           <p className=" mt-28 text-green font-bold text-3xl">Take it to the<br />
