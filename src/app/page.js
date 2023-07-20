@@ -30,7 +30,7 @@ export default function Home() {
             price="22"
             caption="plan1 des" />
           <Plan title="plan2" price="22" caption="plan2 des" />
-          <Plan title="plan3" price="22" caption="plan3 des" />
+          <div><Plan title="plan3" price="22" caption="plan3 des" /></div> 
         </div>
         <div className=" flex text-center justify-center">
           <p className=" mt-28 text-green font-bold text-3xl">Take it to the<br />
@@ -111,7 +111,7 @@ export default function Home() {
           
           </div>
           
-          <div className="flex flex-row gap-4 px-6 py-2">
+          <div className="flex flex-row justify-center items-center gap-4 px-6 py-2">
           <Quote
           w1="“My best friend"
           w2='in scaling my business”'
@@ -136,6 +136,7 @@ export default function Home() {
           
           </div>
           <Help/>
+
           <Free/>
           <Footer/>
           <Social/>

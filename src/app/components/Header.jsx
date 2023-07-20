@@ -27,7 +27,7 @@ const Header = () => {
                 </div>
                     <div className=" flex  space-x-4   ">
                         <button>Log in</button>
-                        <button className=" bg-lime-600 box-border font-normal text-base rounded-2xl px-4 py-2">Start free</button>
+                        <button className=" h-10 mt-5 text-white  bg-lime-600 box-border font-normal text-base rounded-2xl px-4 py-2">Start free</button>
                     </div>
             </div>
         </>
